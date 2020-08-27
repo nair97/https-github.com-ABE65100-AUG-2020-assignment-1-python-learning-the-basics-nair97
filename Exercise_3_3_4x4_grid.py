@@ -1,8 +1,6 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-Created on Thu Aug 27 13:03:52 2020
-
+4x4 version grid
+Think Python, 2nd Edition Ex3.3
 """
 
 def do_twice(f):
@@ -55,4 +53,3 @@ def print_grid():
     one_four_one(print4beams, print_row, nothing)
 
 print_grid()
-
