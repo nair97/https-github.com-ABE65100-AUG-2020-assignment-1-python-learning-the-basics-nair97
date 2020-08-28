@@ -1,55 +1,30 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
-4x4 version grid
-Think Python, 2nd Edition Ex3.3
+Created on Fri Aug 28 15:41:41 2020
+
+@author: meerarakesh09
 """
 
-def do_twice(f):
-    f()
-    f()
+def do_twice(func, arg):
+    
+    func(arg)
+    func(arg)
 
-def do_four(f):
-    do_twice(f)
-    do_twice(f)
 
-def one_four_one(f, g, h):
-    f()
-    do_four(g)
-    h()
+def print_twice(arg):
+    
+    print(arg)
+    print(arg)
 
-def print_plus():
-    print('+', end=' ')
 
-def print_dash():
-    print('-', end=' ')
+def do_four(func, arg):
+   
+    do_twice(func, arg)
+    do_twice(func, arg)
 
-def print_bar():
-    print('|', end=' ')
 
-def print_space():
-    print(' ', end=' ')
+do_twice(print, 'spam')
+print('spam')
 
-def print_end():
-    print()
-
-def nothing():
-    "do nothing"
-
-def print1beam():
-    one_four_one(nothing, print_dash, print_plus)
-
-def print1post():
-    one_four_one(nothing, print_space, print_bar)
-
-def print4beams():
-    one_four_one(print_plus, print1beam, print_end)
-
-def print4posts():
-    one_four_one(print_bar, print1post, print_end)
-
-def print_row():
-    one_four_one(nothing, print4posts, print4beams)
-
-def print_grid():
-    one_four_one(print4beams, print_row, nothing)
-
-print_grid()
+do_four(print, 'spam')
