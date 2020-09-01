@@ -2,22 +2,28 @@
 """
 Spyder Editor
 
-This is a temporary script file.
+To draw 3 set of flowers using turtle module
+by Meera - 09-01-2020
 """
 
 import math
 import turtle
+#math function provides all mathematical functions
+#turtle module creates images
 
 def polyline(obj, length, sides, angle):
     for i in range(sides):
         obj.fd(length)
         obj.lt(angle)
+    #Generalizing polyline to take angle and length to draw arc for petals
 
 def arc(t, radius, angle):
     arc_length = 2 * math.pi * radius * angle / 360
     sides = int(arc_length / 3) + 1
     step_length = arc_length / sides
     step_angle = angle / sides
+    #rewriting arc to use polyline
+    #calculating the arc length and angle for petal formation
 
     polyline(obj = t, length = step_length, sides = sides, angle = step_angle)
 
@@ -25,6 +31,7 @@ def petal(t, r, angle):
     for i in range(2):
         arc(t, r, angle)
         t.lt(180.0-angle)
+        #creating the petal using arc
 
 def flower(t, n, r, angle):
     """
@@ -36,11 +43,13 @@ def flower(t, n, r, angle):
     for i in range(n):
         petal(t, r, angle)
         t.lt(360.0/n)
+        #creating flower using petal
 
 def move_turtle(t, length):
     t.pu()
     t.fd(length)
     t.pd()
+    #moving pen up and down using turtle to draw the flower
 
 bob = turtle.Turtle()
 
