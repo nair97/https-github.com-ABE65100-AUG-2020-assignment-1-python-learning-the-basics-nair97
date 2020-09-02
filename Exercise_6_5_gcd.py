@@ -25,6 +25,7 @@ num2 = int(input("Enter the second number: "))
 # the following condition checks whether we are
 # running as a script, in which case run the test code,
 # or being imported, in which case don't.
+
 if __name__ == '__main__':
 
           print(gcd(num1, num2))
