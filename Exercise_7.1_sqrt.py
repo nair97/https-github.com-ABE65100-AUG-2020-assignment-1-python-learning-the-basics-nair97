@@ -22,6 +22,9 @@ def mysqrt(a):
 
 #to test and print table using loop
 def test_square_root(num=10):
+
+    d = square_root(a) - mysqrt(a)
+    return d
     print("a        mysqrt(a)        math.sqrt(a)        diff")
     print("---     ----------       -------------       ------")
     for a in range(1, num):
