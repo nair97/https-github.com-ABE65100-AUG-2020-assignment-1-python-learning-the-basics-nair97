@@ -17,6 +17,10 @@ def gcd(a, b):
           return a
     else:
           return gcd(b, a%b) #calculate gcd value
+      
+#entering values for computing GCD
+num_a = int(input(" enter the value for a: "))
+num_b = int(input(" enter the valur for b: "))
 
 # the following condition checks whether we are
 # running as a script, in which case run the test code,
@@ -24,11 +28,17 @@ def gcd(a, b):
 
 if __name__ == '__main__':
 
-    #entering values for computing GCD
-   num1 = int(input(" Enter the first number: "))
-   num2 = int(input("Enter the second number: "))
+       print("The GCD is: ",num_a, num_b)
+       
+gcd(num_a, num_b)
+
+       
+       
+    
+
+
+
       
-print(gcd(num1,num2))
 
 
 
