@@ -17,16 +17,15 @@ def gcd(a, b):
           return a
     else:
           return gcd(b, a%b) #calculate gcd value
-      
-#computing GCD     
-num1 = int(input(" Enter the first number: "))
-num2 = int(input("Enter the second number: "))
-
 # the following condition checks whether we are
 # running as a script, in which case run the test code,
 # or being imported, in which case don't.
 
 if __name__ == '__main__':
+#computing GCD     
+       num1 = int(input(" Enter the first number: "))
+       num2 = int(input("Enter the second number: "))
 
-          print(gcd(num1, num2))
+print(gcd(num1, num2))
+
           
