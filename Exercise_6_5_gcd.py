@@ -9,16 +9,25 @@ Created on Tue Sep  1 16:05:10 2020
 #divides both of them with no remainder.
 
 def gcd(a, b):
-   # a, b: positive integers
-    #returns: a positive integer, the greatest common divisor of a & b.
-    # Base case is when b = 0
-    r = a % b
+# a, b: positive integers
+#returns: a positive integer, the greatest common divisor of a & b.
+# Base case is when b = 0
+   
     if b == 0:
-        return a
+          return a
     else:
-        return gcd(b, r) #calculate gcd value
+          return gcd(b, a%b) #calculate gcd value
+      
+#computing GCD     
+num1 = int(input(" Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+print(gcd(num1, num2))
+      
+      
+        
+      
+        
+        
+
     
-    num1 = int(input("Enter the first number: "))
-    num2 = int(input("Enter the second number: "))
-    print(gcd(num1,  num2))
     
