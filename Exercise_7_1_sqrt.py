@@ -39,10 +39,11 @@ def test_square_root(num_a):
 # the following condition checks whether we are
 # running as a script, in which case run the test code,
 # or being imported, in which case don't.
-
 if __name__ == '__main__':
         
-    test_square_root(range(1,10))
+         test_square_root(range(1,10))
+         
+         
     
     
     

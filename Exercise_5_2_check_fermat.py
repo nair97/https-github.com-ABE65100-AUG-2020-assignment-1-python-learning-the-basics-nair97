@@ -28,6 +28,10 @@ def check_numbers():
    
     return check_fermat(a, b, c, n)
 
+# the following condition checks whether we are
+# running as a script, in which case run the test code,
+# or being imported, in which case don't.
 if __name__ == '__main__':
 
-   check_numbers()
+         check_numbers()
+         
