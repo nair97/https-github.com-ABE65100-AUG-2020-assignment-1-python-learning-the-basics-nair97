@@ -21,7 +21,12 @@ def gcd(a, b):
 #computing GCD     
 num1 = int(input(" Enter the first number: "))
 num2 = int(input("Enter the second number: "))
-print(gcd(num1, num2))
+
+if __name__ == '__main__':
+
+    print(gcd(num1, num2))
+
+
       
       
         

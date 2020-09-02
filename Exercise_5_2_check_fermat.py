@@ -28,4 +28,6 @@ def check_numbers():
    
     return check_fermat(a, b, c, n)
 
-check_numbers()
+if __name__ == '__main__':
+
+   check_numbers()
