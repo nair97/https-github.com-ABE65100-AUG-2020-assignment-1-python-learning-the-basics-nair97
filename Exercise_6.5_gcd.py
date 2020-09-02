@@ -5,13 +5,26 @@ Created on Tue Sep  1 16:05:10 2020
 
 @author: meerarakesh09
 """
+# import math functions
+import math
 
+#functions to calculate newton's square root
+def mysqrt(a):
+    x = a/2
+    epsilon = 0.0000001
+    while True:
+        print(x)
+        y = (x + a/x)/2
+        if abs(y-x) < epsilon:
+           break
+        x = y
+    return x
 
-# Exercise 6.5  greatest common divisor (GCD) of a and b is the largest
-# number that divides both of them with no remainder
-
-def gcd(a, b):
-    if b == 0:
-        return a
-    r = a % b # calculating GCD of remainder r
-    return gcd(b, r)
+#to test and print table using loop
+def test_square_root(num=10):
+    print("a        mysqrt(a)        math.sqrt(a)        diff")
+    print("---     ----------       -------------       ------")
+    for a in range(1, num):
+        print (a,"  ",mysqrt(a),"  ",math.sqrt(a),"  ",abs (mysqrt(a) - math.sqrt(a)),"  ")
+   
+test_square_root()
