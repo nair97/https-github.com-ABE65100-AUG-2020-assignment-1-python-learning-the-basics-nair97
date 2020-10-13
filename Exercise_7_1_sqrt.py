@@ -41,7 +41,7 @@ def test_square_root(num_a):
 # or being imported, in which case don't.
 
 if __name__ == '__main__':
-        
+        #print newton's square root method
          test_square_root(range(1,10))
          
          

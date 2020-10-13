@@ -33,6 +33,6 @@ def check_numbers():
 # or being imported, in which case don't.
 
 if __name__ == '__main__':
-
+#call the function
          check_numbers()
          
